@@ -86,11 +86,12 @@ public class SignupSteps {
 
     @Then("User prints the account balance")
     public void printBalance() {
-
+        // Check balance
         accountOverviewPage = new AccountOverviewPage(driver);
 
         accountOverviewPage.printAccountBalance();
 
         driver.quit();
+
     }
 }
